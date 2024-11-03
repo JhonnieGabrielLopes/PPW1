@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.curriculo {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333333;
+}
+
+.informacoes {
+    font-size: 0.9em;
+    color: #666666;
+    text-align: center;
+}
+
+.informacoes p {
+    margin: 5px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes img {
+    margin-right: 8px;
+}
+
+.secao {
+    margin-top: 20px;
+}
+
+.secao h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.secao ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+.secao ul li {
+    margin-bottom: 5px;
+}
