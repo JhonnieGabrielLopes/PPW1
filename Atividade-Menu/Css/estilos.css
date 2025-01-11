@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(192, 201, 221);
+}
+
+.menu{
+    background: linear-gradient(180deg, rgb(99, 99, 227), rgb(192, 201, 221));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(82, 90, 235, 0.2);
+    display: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 1px 10px 0px #000;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+.menu li ul li {
+    float: none;
+    margin-left: 0;
+}
+.menu li ul li ul {
+    top: 0;
+    left: 99%;
+}
+.fix {
+    clear: both;
+}
