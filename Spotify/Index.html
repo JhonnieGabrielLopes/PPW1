@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Flex Spotify</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-navegacao">
+                <div class="navegacao-botoes">
+                    <i class="fa-solid fa-ellipsis"></i> 
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i></div>
+                <div class="centro-busca">
+                    <i class="fa-solid fa-house"></i>
+                    <div class="busca">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="search" placeholder="O que você quer ouvir?" id="search">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                </div>
+                <div class="navegacao-botoes">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="menu-lateral">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-layer-group"></i></a></li>
+                    <li><a href="#" id="heart"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#" id="bookmark"><i class="fa-solid fa-bookmark "></i></a></li>
+                    <li><a href="#"><img src="Image/Anti_icon.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/face_value.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/From_zero.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Garage_inc.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Hexada.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Hot_space.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Human_error.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Parachutes.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/Revolution.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="Image/world_of_wlaker.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="playlist">
+                <div class="playlistNome">
+                    <div class="imagem">
+                        <img src="Image/Anti_icon.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="album"><span>Álbum</span></div>
+                        <div class="titulo"><h1>ANTI-ICON</h1></div>
+                        <div class="detalhes">
+                            <img src="Image/ghostemane.jpg" alt="" class="perfil">
+                            <span class="artista">Ghostemane</span> • 
+                            <span class="ano">2020</span> • 
+                            <span >5 músicas, 9min 37s</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="barraOp">
+                    <div class="opIcones">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-random"></i>
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <i class="fa-solid fa-circle-down"></i>
+                        <i class="fa-solid fa-ellipsis"></i> 
+                    </div>
+                    <div class="lista">
+                        <span>Lista</span>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+                <div class="musicas">
+                    <div class="cabecalho">
+                        <span>#</span>
+                        <span>Título</span>
+                        <span>Reproduções</span>
+                        <span><i class="fa-solid fa-clock"></i></span>
+                    </div>
+                    <div class="musica">
+                        <span>1</span>
+                        <div class="titulo">
+                        <span class="nome">Intro.Destitute</span>
+                        <span class="artista"><span class="explicito">E</span> Ghostemane</span>
+                        </div>
+                        <span>4.801.590</span>
+                        <span>1:55</span>
+                    </div>
+                    <div class="musica">
+                        <span>2</span>
+                        <div class="titulo">
+                        <span class="nome">Vagabond</span>
+                        <span class="artista"><span class="explicito">E</span> Ghostemane</span>
+                        </div>
+                        <span>44.840.842</span>
+                        <span>1:54</span>
+                    </div>
+                    <div class="musica">
+                        <span>3</span>
+                        <div class="titulo">
+                        <span class="nome">Lazaretto</span>
+                        <span class="artista"><span class="explicito">E</span> Ghostemane</span>
+                        </div>
+                        <span>26.355.846</span>
+                        <span>1:53</span>
+                    </div>
+                    <div class="musica">
+                        <span>4</span>
+                        <div class="titulo">
+                        <span class="nome">Sacrilege</span>
+                        <span class="artista"><span class="explicito">E</span> Ghostemane</span>
+                        </div>
+                        <span>26.024.166</span>
+                        <span>2:21</span>
+                    </div>
+                    <div class="musica">
+                        <span>5</span>
+                        <div class="titulo">
+                        <span class="nome">AI</span>
+                        <span class="artista"><span class="explicito">E</span> Ghostemane</span>
+                        </div>
+                        <span>31.979.387</span>
+                        <span>2:54</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="musica-atual">
+                <img src="Image/goodbye.jpg" alt="">
+                <div class="info">
+                    <h3>goodbye~</h3>
+                    <p>Carbon Amodio</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-circle-plus"></i>
+            <div class="reproducao">
+                <div class="controles">
+                    <i class="fa-solid fa-random"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="container-progresso">
+                    <span class="esquerda">0:20</span>
+                    <div class="barra-progresso">
+                    </div>
+                    <span class="direita">1:39</span>
+                  </div>
+                
+            </div>
+            <div class="volume">
+                <i class="fa-solid fa-square-caret-right"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <div class="barra-progresso"></div>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/dcdd1dcc23.js" crossorigin="anonymous"></script>
+</body>
+</html>

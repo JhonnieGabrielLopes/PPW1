@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #222222;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 60px;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    height: calc(100vh - 160px);
+}
+footer {
+    height: 100px;
+    flex-grow: 0;
+    flex-shrink: 1; 
+    flex-basis: 100px;
+}
+.header-navegacao {
+    display: flex;
+    justify-content: space-between;
+}
+.navegacao-botoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 20px;
+}
+.centro-busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.busca {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    border-radius: 1000px;
+    border: 1px solid transparent;
+}
+.busca input[type="search"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e4e4e4 ;
+}
+.busca:focus-within {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-lateral {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    /* height: 100%; - Não precisa de altura pois o padrão do align-items é stretch*/
+    overflow-y: auto;
+    flex-basis: 60px;
+    scrollbar-width: none;
+}
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-lateral ul li a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    border-radius: 10%;
+}
+#heart {
+    background: linear-gradient(180deg, rgb(99, 99, 227), rgb(192, 201, 221));
+}
+#bookmark{
+    background: rgb(5, 129, 84);
+}
+.fa-bookmark{
+    color: rgb(46, 222, 99);
+    font-size: 20px;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 80px;
+    font-family: arial;
+}
+
+.musica-atual {
+    padding-left: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.musica-atual i {
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+}
+.reproducao {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.reproducao .controles {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.reproducao .barra-progresso {
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 5px;
+    min-width: 400px;
+    max-width: 300px;
+    position: relative;
+}
+.volume {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 15px;
+}
+.volume .barra-progresso {
+    min-width: 90px;
+    max-width: 100px;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 5px;
+}
+.menu-lateral ul li a img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 5%; 
+    object-fit: cover; 
+}
+.musica-atual img {
+    width: 65px; 
+    height: 65px;
+    border-radius: 5%; 
+    object-fit: cover; 
+}
+.container-progresso {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+.esquerda, .direita {
+    font-size: 14px;
+    color: #ffffff;
+}
+.reproducao .barra-progresso::before {
+    content: '';
+    display: block;
+    width: 20%; 
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+.volume .barra-progresso::before {
+    content: '';
+    display: block;
+    width: 60%; 
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.volume .barra-progresso:hover::before {
+    background-color: #4caf50;
+}
+.fa-ellipsis {
+    font-size: 20px;
+    padding-right: 10px;
+}
+.playlist {
+    background: linear-gradient(rgb(139, 162, 138), rgb(0, 0, 0) 60%);
+    overflow-y: auto;
+    flex: 1;
+    padding: 20px;
+    font-family: arial;
+}
+.playlistNome {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+.imagem img{
+    width: 245px;
+    height: 245px;
+    border-radius: 5px;
+}
+.info {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+    white-space: nowrap;
+}
+.album {
+    font-size: 16px;
+    color: white;   
+    padding: 5px 10px;
+}
+
+.titulo h1 {
+    font-size: 70px;
+    color: white;
+}
+.detalhes {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #ccc;
+    gap: 5px;
+}
+.detalhes .perfil {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.detalhes .artista {
+    color: white;
+}
+.barraOp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.opIcones {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 15px;
+}
+.fa-circle-play{
+    font-size: 50px;
+    color: #3abc3e;
+}
+.lista {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.musicas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+.cabecalho {
+    display: grid;
+    grid-template-columns: 50px 1fr 150px 60px; 
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #aaaaaa;
+}
+.musica {
+    display: grid;
+    grid-template-columns: 50px 1fr 150px 60px;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 5px;
+}
+.musica:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+.nome {
+    font-size: 18px;
+    color: white;
+}
+.artista {
+    font-size: 14px;
+    color: #aaa;
+}
+.explicito {
+    display: inline-block;
+    background-color: #aaa;
+    color: black;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
