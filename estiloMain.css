@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121413;
+    font-family: Arial, sans-serif;
+}
+.menu {
+    background: rgb(188, 188, 188);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.caixa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+.caixa li {
+    background: #585858;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 150px;
+    transition: transform 0.2s, background 0.3s;
+}
+.caixa li:hover {
+    background: #000000;
+    transform: scale(1.05);
+    color: #ffff;
+}
+.caixa li a{
+    color: #000;
+    text-decoration: none;
+}
+.caixa li:hover a{
+    transform: scale(1.05);
+    color: #ffff;
+}
